@@ -2,7 +2,7 @@ package entity
 
 //  input ,"1de85770":["4CA621",46.3482,-1.8333,224,37000,415,"2125","T-LFBH1","B738","EI-DWT",1537276192,"EIN","AGA","FR3846",0,0,"RYR3846",0,"RYR"]
 case class FlightRadarRecord(
-                              webSiteID: String,
+                              flightGlobalID: String,
                               MODE_S_CODE: String,
                               LATITUDE: String,
                               LONGITUDE: String,
