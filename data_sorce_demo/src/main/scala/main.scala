@@ -9,14 +9,16 @@ object main {
     val data: HttpResponse[String] = Http(url).asString
 
     val arr = data.body.split("\n")
-    val filtered_arr = arr.filter(str => str.startsWith(",") && str.endsWith("]")).filter(row=> row.contains("JBU1347"))
+    val filtered_arr = arr.filter(str => str.startsWith(",") && str.endsWith("]"))
     //    filtered_arr.foreach(println)
     //    println(Flightradar24DataRowParcer.parse(filtered_arr(10)))
 
-    println(filtered_arr(0))
-//    filtered_arr.foreach(Flightradar24DataRowParcer.parse)
+    //    println(filtered_arr(0))
+    //        filtered_arr.foreach(Flightradar24DataRowParcer.parse)
 
-//    println(filtered_arr.map(Flightradar24DataRowParcer.parse).filter(flightRecord => flightRecord._13 != "" && flightRecord._12 != "").size)
-
+    //    println(filtered_arr.map(Flightradar24DataRowParcer.parse).filter(flightRecord => flightRecord._13 != "" && flightRecord._12 != "").size)
+    val data1 = filtered_arr.map(Flightradar24DataRowParcer.parse).map(data => data.timestamp.toInt)
+    println(data1.max)
+    println(data1.min)
   }
 }
