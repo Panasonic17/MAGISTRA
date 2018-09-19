@@ -7,8 +7,10 @@
     <groupId>magistr</groupId>
     <artifactId>magistr</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
     <properties>
         <scala.version>2.11</scala.version>
+        <spark.version>2.3.1</spark.version>
     </properties>
 
     <dependencies>
@@ -18,6 +20,23 @@
             <groupId>org.scalaj</groupId>
             <artifactId>scalaj-http_${scala.version}</artifactId>
             <version>2.4.1</version>
+        </dependency>
+
+        <!--spark-->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_${scala.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_${scala.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_${scala.version}</artifactId>
+            <version>${spark.version}</version>
         </dependency>
 
     </dependencies>
