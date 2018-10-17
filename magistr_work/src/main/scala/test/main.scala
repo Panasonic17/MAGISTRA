@@ -4,7 +4,7 @@ import http.HttpClient
 import parcers.flightRadarParsers.Flightradar24Parcer
 import scalaj.http.{Http, HttpResponse}
 
-object main {
+object main2123 {
   def main(args: Array[String]): Unit = {
     //    def get(url: String) = scala.io.Source.fromURL(url).mkString
     //
