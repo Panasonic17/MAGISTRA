@@ -12,6 +12,7 @@ object main {
     //    //   val url_1=/
     val data: HttpResponse[String] = Http(url).asString
     //
+    print(data)
     val arr = data.body.split("\n")
     val filtered_arr = arr.filter(str => str.startsWith(",") && str.endsWith("]"))
     //    //    filtered_arr.foreach(println)

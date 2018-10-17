@@ -1,10 +1,34 @@
-package test
-
-import http.HttpClient
-
-object test {
-  def main(args: Array[String]): Unit = {
-    val url = "https://data-live.flightradar24.com/zones/fcgi/feed.js?bounds=69.65,-55.06,-101.88,81.82&faa=1&mlat=1&flarm=1&adsb=1&gnd=1&air=1&vehicles=1&estimated=1&maxage=14400&gliders=1&stats=1"
-    println(HttpClient.getBody(url))
-  }
-}
+//package test
+//
+//import http.HttpClient
+//import org.apache.commons.csv.{CSVFormat, CSVRecord}
+//import org.apache.spark.sql.SparkSession
+//import org.apache.spark.sql.catalyst.ScalaReflection
+//import org.apache.spark.sql.types._
+//
+//object test {
+//
+//
+//  def main(args: Array[String]): Unit = {
+//    //
+//    //    val spark = SparkSession
+//    //      .builder
+//    //      .master("local[*]")
+//    //      .appName("a")
+//    //      .getOrCreate()
+//    //
+//            var tablename = "ahasnf"
+//    //
+//            val inputPath ="C:\\WORK_DIR\\NORTHORM\\tmp\\sparktest\\input\\" + tablename + ".csv"
+//    //
+//    //        val data = spark.read.option("header", "true").option("inferSchema", "true").option("delimiter", "\u001F").csv(inputPath)
+//    //        println(data.schema)
+//
+////    val in = new Nothing(inputPath)
+////    val records = CSVFormat.DEFAULT
+////      .parse(in);
+//
+//
+//
+//  }
+//}

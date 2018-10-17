@@ -1,5 +1,5 @@
 package senders
 
-class SocetSender extends Sender {
-
-}
+//#class SocetSender extends Sender {
+//
+//}
